@@ -21,9 +21,12 @@ $(".btn").click(function(){
    
     checkAnswer(userClickedPattern.length-1);
 });
-const mq = window.matchMedia( "(min-width: 480px)" );
+const mq = window.matchMedia( "(max-device-width: 480px)" );
 if (mq.matches) {
    $("#level-title").text("Touch anywhere to start Game.");
+  }
+  else{
+    $("#level-title").text("Press Any Key to Start Game");
   }
 $(document).on("touchend", touchHandler);
 function touchHandler(){
