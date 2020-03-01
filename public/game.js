@@ -21,11 +21,11 @@ $(".btn").click(function(){
    
     checkAnswer(userClickedPattern.length-1);
 });
-const mq = window.matchMedia( "(max-width: 768px)" );
+const mq = window.matchMedia( "(min-width: 480px)" );
 if (mq.matches) {
    $("#level-title").text("Touch anywhere to start Game.");
   }
-$(document).addEventListener("touchend", touchHandler, false);
+$(document).on("touchend", touchHandler);
 function touchHandler(){
   if(!started){
     $("#level-title").text("Level "+level);
