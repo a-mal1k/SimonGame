@@ -75,7 +75,9 @@ function checkAnswer(currentLevel){
         setTimeout(function () {
           $("body").removeClass("game-over");
         }, 200);
-
+       if (mq.matches)
+            $("#level-title").text("Game Over, Touch anywhere to Restart");
+           else
         $("#level-title").text("Game Over, Press Any Key to Restart");
         startOver();
       }
