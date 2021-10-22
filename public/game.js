@@ -4,6 +4,7 @@ var userClickedPattern =[];
 var level = 0;
 var started =false;
 
+$(document).ready(function() {
 
 $(document).keydown(function(){
     if(!started){
@@ -85,3 +86,5 @@ function startOver(){
     started=false;
     gamePattern=[];
 }
+    
+    });
