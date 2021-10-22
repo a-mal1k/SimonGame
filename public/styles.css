@@ -13,15 +13,6 @@ body {
   color: #FEF2BF;
 }
 
-.container-fluid {
-  display: flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  margin:auto;
-}
-
-
 .btn {
   margin: 25px;
   display: inline-block;
