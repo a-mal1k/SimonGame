@@ -12,7 +12,13 @@ body {
   margin:  5%;
   color: #FEF2BF;
 }
-
+.container-fluid{
+margin:auto;
+display:flex;
+flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
 .btn {
   margin: 25px;
   display: inline-block;
